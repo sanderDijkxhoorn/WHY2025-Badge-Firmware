@@ -1,0 +1,828 @@
+Command: /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/tools/idf_monitor.py -p /dev/cu.wchusbserial1110 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 1 --decode-panic backtrace /Users/zyki/Work/firmware/build/badgevms.elf /Users/zyki/Work/firmware/build/bootloader/bootloader.elf /Users/zyki/Work/firmware/build/app_elfs/hello.elf /Users/zyki/Work/firmware/build/app_elfs/why2025_sponsors.elf /Users/zyki/Work/firmware/build/app_elfs/why2025_namebadge.elf /Users/zyki/Work/firmware/build/app_elfs/sdl_test.elf /Users/zyki/Work/firmware/build/app_elfs/wifi_setup.elf /Users/zyki/Work/firmware/build/app_elfs/badgevms_launcher.elf /Users/zyki/Work/firmware/build/app_elfs/why2025_ota.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/why2025_namebadge/why2025_namebadge.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/why2025_sponsors/why2025_sponsors.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup/wifi_setup.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/badgevms_launcher/badgevms_launcher.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/sdl_test/sdl_test.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/why2025_ota/why2025_ota.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/hello/hello.elf -m '/Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/zyki/esp/v5.5/esp-idf/tools/idf.py'
+zх��х�       �ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x30f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x164c
+load:0x4ff29ed0,len:0xe14
+load:0x4ff2cbd0,len:0x3100
+entry 0x4ff29eda
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x7 (HP_SYS_HP_WDT_RESET),boot:0x30f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x164c
+load:0x4ff29ed0,len:0xe14
+load:0x4ff2cbd0,len:0x3100
+entry 0x4ff29eda
+[0;32mI (28) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Aug 12 2025 16:52:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (32) boot: efuse block revision: v0.3[0m
+[0;32mI (35) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;33mW (47) boot.esp32p4: CPU has been reset by WDT.[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (71) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (77) boot:  2 ota_0            OTA app          00 10 00010000 00200000[0m
+[0;32mI (84) boot:  3 ota_1            OTA app          00 11 00210000 00200000[0m
+[0;32mI (90) boot:  4 storage          Unknown data     01 81 00410000 00bb0000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (101) boot: No factory image, trying OTA 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=40110020 size=680a8h (426152) map[0m
+[0;32mI (184) esp_image: segment 1: paddr=000780d0 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (185) esp_image: segment 2: paddr=00078140 vaddr=4ff00000 size=07ed8h ( 32472) load[0m
+[0;32mI (195) esp_image: segment 3: paddr=00080020 vaddr=40000020 size=1008d0h (1050832) map[0m
+[0;32mI (371) esp_image: segment 4: paddr=001808f8 vaddr=4ff07ed8 size=0fe68h ( 65128) load[0m
+[0;32mI (385) esp_image: segment 5: paddr=00190768 vaddr=4ff17d80 size=05de0h ( 24032) load[0m
+[0;32mI (396) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (415) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (415) boot: Disabling RNG early entropy source...[0m
+sdio_mempool_create free:131004 min-free:131004 lfb-def:90112 lfb-8bit:90112
+
+BadgeVMS Initializing...
+[0;33mW (658) why2025_main: Free main memory: 355440[0m
+W memory_init: Initializing PSRAM
+W memory_init: Disabling caches and interrupts
+W memory_init: Unmapping all of our address space
+W memory_init: Mapping all pages for memory test
+W memory_init: Invalidate all pages for memory test
+W memory_init: Running memory test
+W memory_test: Starting write
+W memory_test: Writing back pages
+W memory_test: Invalidating pages
+W memory_test: Starting read
+W memory_init: Unmapping all of our address space
+W memory_init: Map allocator address space
+W memory_init: Invalidate allocator address space
+W memory_init: Re-enabling caches and interrupts
+W memory_init: Initialzing memory pool
+W memory_init: Disabling caches and interrupts
+W memory_init: Map framebuffer allocator address space
+W memory_init: Invalidate allocator address space
+W memory_init: Re-enabling caches and interrupts
+W memory_init: Initialzing framebuffer pool
+Pool 0: 
+Order 0, (1) 1 blocks (1 pages)
+Order 1, (2) 1 blocks (2 pages)
+Order 2, (4) 1 blocks (4 pages)
+Order 3, (8) 1 blocks (8 pages)
+Order 4, (16) 1 blocks (16 pages)
+Order 5, (32) 1 blocks (32 pages)
+Order 6, (64) 1 blocks (64 pages)
+Order 7, (128) 1 blocks (128 pages)
+Order 8, (256) 1 blocks (256 pages)
+Order 9, 0 blocks (0 pages)
+Waste: 0 blocks (0 pages)
+Total free pages: (calculated) 510 (stored) 510 max_order_free: 8
+[0;33mW (1078) ldo: The voltage value 0 is out of the recommended range [500, 2700][0m
+[1;31mE (1098) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1098) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1098) fatfs-sd: SD card not mounted[0m
+[1;31mE (1108) device: The device does not exist SD0[0m
+Connected to target
+Transmission rate changed.
+[0;33mW (3058) slave_c6_flasher: Target = 8[0m
+DEBUG: Error: MD5 checksum does not match
+DEBUG: Expected:
+DEBUG: d47a7ac08eb78d02a46f623871de6d0f
+DEBUG: Actual:
+DEBUG: daca1f5f2a30a65431c69aebce4ad1b7
+[0;33mW (3098) slave_c6_flasher: Bootloader MD5 mismatch, flashing...[0m
+Erasing flash (this may take a while)...
+Start programming
+Progress: 4 %Progress: 8 %Progress: 12 %Progress: 16 %Progress: 21 %Progress: 25 %Progress: 29 %Progress: 33 %Progress: 37 %Progress: 42 %Progress: 46 %Progress: 50 %Progress: 54 %Progress: 59 %Progress: 63 %Progress: 67 %Progress: 71 %Progress: 75 %Progress: 80 %Progress: 84 %Progress: 88 %Progress: 92 %Progress: 97 %Progress: 100 %
+Finished programming
+Flash verified
+[0;33mW (3418) slave_c6_flasher: Partition table MD5 match, skipping...[0m
+DEBUG: Error: MD5 checksum does not match
+DEBUG: Expected:
+DEBUG: c03427054bd8d430535315f149931891
+DEBUG: Actual:
+DEBUG: 6e63989af99042608d7b80f67b0ec132
+[0;33mW (4028) slave_c6_flasher: Application MD5 mismatch, flashing...[0m
+Erasing flash (this may take a while)...
+Start programming
+Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 0 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 1 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 2 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 3 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 4 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 5 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 6 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 7 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 8 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 9 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 10 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 11 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 12 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 13 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 14 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 15 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 16 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 17 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 18 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 19 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 20 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 21 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 22 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 23 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 24 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 25 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 26 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 27 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 28 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 29 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 30 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 31 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 32 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 33 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 34 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 35 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 36 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 37 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 38 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 39 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 40 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 41 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 42 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 43 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 44 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 45 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 46 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 47 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 48 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 49 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 50 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 51 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 52 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 53 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 54 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 55 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 56 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 57 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 58 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 59 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 60 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 61 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 62 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 63 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 64 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 65 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 66 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 67 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 68 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 69 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 70 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 71 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 72 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 73 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 74 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 75 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 76 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 77 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 78 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 79 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 80 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 81 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 82 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 83 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 84 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 85 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 86 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 87 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 88 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 89 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 90 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 91 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 92 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 93 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 94 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 95 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 96 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 97 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 98 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 99 %Progress: 100 %
+Finished programming
+Flash verified
+[0;33mW (16948) slave_c6_flasher: Resetting C6![0m
+[0;33mW (17058) slave_c6_flasher: Done![0m
+[0;33mW (19828) HERMES: Starting[0m
+[0;33mW (19838) compositor: Allocated framebuffer at 0x4ff43530, pixels at 0x48510000, size 17, dimensions 720 x 720[0m
+[0;33mW (19848) compositor: Allocated framebuffer at 0x4ff436fc, pixels at 0x48710000, size 17, dimensions 720 x 720[0m
+[0;33mW (19858) compositor: Allocated framebuffer at 0x4ff4372c, pixels at 0x48910000, size 17, dimensions 720 x 720[0m
+[1;31mE (20398) TCA8418: Connect to keyboard, this message and the follow error are cosmetic. There is no error[0m
+[1;31mE (20398) TCA8418: keyboard initialization success[0m
+[0;33mW (20408) i2c_bus: i2c0 has been inited, return handle directly, ref_counter=1[0m
+[0;33mW (20408) i2c_bus: i2c0 has been inited, return handle directly, ref_counter=1[0m
+[0;33mW (22258) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (22268) wifi: retry to connect to the AP[0m
+[0;33mW (24158) BMI270: BMI270 initialized[0m
+[0;33mW (24158) compositor: Got framebuffer[0]: 0x48510000[0m
+[0;33mW (24168) compositor: Got framebuffer[1]: 0x48710000[0m
+[0;33mW (24178) compositor: Got framebuffer[2]: 0x48910000[0m
+BadgeVMS is ready
+[0;33mW (24178) why2025_main: Free main memory: 274400, free PSRAM pages: 461/511, running processes 0[0m
+[0;33mW (24328) init: Updating FLASH0:init.toml[0m
+Loading FLASH0:init.toml
+[1;31mE (24528) device: The device does not exist SD0[0m
+[0;33mW (24528) init: Cannot open SD0:init.toml[0m
+Failed to load SD0:init.toml
+
+Startup Configuration:
+
+sponsors:
+  restart: no
+  run once: no
+  stack: 16384 bytes
+  command: APPS:[why2025_sponsors]why2025_sponsors.elf --boot
+  application: why2025_sponsors
+Initial startup phase...
+Bootup successful, marking OTA partition valid
+[0;33mW (24548) why_ota: Running partition type 0 subtype 16 (offset 0x00010000)[0m
+Entering main supervision loop...
+Started sponsors (APPS:[why2025_sponsors]why2025_sponsors.elf) pid 1
+[0;33mW (24568) ELF: No VMEM info found[0m
+[0;33mW (24578) task: Start ELF file entrypoint at 0x4a00d208[0m
+Sponsor app
+Argv[1] --boot
+[0;33mW (24598) compositor: Allocated framebuffer at 0x4ff4bed4, pixels at 0x48b10000, size 17, dimensions 720 x 720[0m
+[0;33mW (24678) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (24678) wifi: retry to connect to the AP[0m
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_true.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_surf.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_stegen.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_speakup.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_secura_bureau_veritas.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_schubergphilis.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_s-unit.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_ripe.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_qusoft.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_prefix_broker.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_onyx.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_netos.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_mullvad.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_leaseweb.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_juniper.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_internetcleanupfoundation.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_hackerhosting.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_fs.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_flexoptix.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_falco_networks.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_espressif.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_deloitte.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_cyso.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_bosch.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_bit.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_allnet.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_adyen.png
+Found sponsor file APPS:[WHY2025_SPONSORS.IMAGES]logo_access42.png
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_s-unit.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_s-unit.png
+New sponsor image ready
+[0;33mW (27088) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (27098) wifi: retry to connect to the AP[0m
+[0;33mW (29498) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (29508) wifi: retry to connect to the AP[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_qusoft.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_qusoft.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+[0;33mW (31918) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (31928) wifi: retry to connect to the AP[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_allnet.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_allnet.png
+New sponsor image ready
+[0;33mW (34328) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (34338) wifi: retry to connect to the AP[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_flexoptix.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_flexoptix.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+[0;33mW (36748) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (36758) wifi: retry to connect to the AP[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_bit.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_bit.png
+New sponsor image ready
+[0;33mW (39158) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (39168) wifi: retry to connect to the AP[0m
+[0;33mW (41578) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (41588) wifi: retry to connect to the AP[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_netos.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_netos.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+[0;33mW (43988) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (43998) wifi: retry to connect to the AP[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_bosch.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_bosch.png
+New sponsor image ready
+[0;33mW (45278) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (45458) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (45928) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (46128) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (46188) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (46318) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (46388) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (46408) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (46408) wifi: failed to connect to the AP[0m
+[0;33mW (46518) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (46588) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (46718) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (46758) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (46868) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (46948) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (47038) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (47148) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (47238) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_mullvad.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_mullvad.png
+New sponsor image ready
+[0;33mW (47808) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (47968) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (48158) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (48358) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (48418) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (48548) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+[0;33mW (48618) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (48728) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (48788) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (48898) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (48968) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (49078) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (49138) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (49228) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (49308) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (49418) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (49468) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (49578) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (49618) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (49708) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (49768) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (49898) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (49968) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (50078) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (50158) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (50268) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (50338) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (50468) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+[0;33mW (50528) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (50658) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_onyx.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_onyx.png
+New sponsor image ready
+[0;33mW (51818) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (51968) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (52018) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (52098) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (52168) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (52238) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (52298) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (52408) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (52478) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (52558) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (52758) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (52908) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (52948) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (53058) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (53108) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (53238) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (53278) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (53388) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (53428) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (53538) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (53588) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_access42.png
+[0;33mW (53668) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (53748) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (53838) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_access42.png
+New sponsor image ready
+[0;33mW (53988) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (54098) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (54188) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (54298) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (54358) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (54428) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (54518) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+[0;33mW (54578) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (54668) TCA8418: Got keyboard event raw 0x88 scancode 0x2a[0m
+[0;33mW (54778) TCA8418: Got keyboard event raw 0x08 scancode 0x2a[0m
+[0;33mW (55638) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (55748) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (55808) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (55898) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (55968) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (56048) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (56118) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (56188) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (56268) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (56358) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (56398) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+[0;33mW (56508) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (56558) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_adyen.png
+[0;33mW (56648) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_adyen.png
+New sponsor image ready
+[0;33mW (57428) TCA8418: Got keyboard event raw 0xb8 scancode 0xe5[0m
+[0;33mW (57608) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (57608) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (57608) TCA8418: Got keyboard event raw 0x38 scancode 0xe5[0m
+[0;33mW (57658) TCA8418: Got keyboard event raw 0xb3 scancode 0x50[0m
+[0;33mW (57678) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (57678) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (57698) TCA8418: Got keyboard event raw 0xc4 scancode 0xe6[0m
+[0;33mW (57698) TCA8418: Got keyboard event raw 0x33 scancode 0x50[0m
+[0;33mW (57938) TCA8418: Got keyboard event raw 0xb3 scancode 0x50[0m
+[0;33mW (57938) TCA8418: Got keyboard event raw 0x44 scancode 0xe6[0m
+[0;33mW (57988) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (58008) TCA8418: Got keyboard event raw 0x33 scancode 0x50[0m
+[0;33mW (58228) TCA8418: Got keyboard event raw 0xb3 scancode 0x50[0m
+[0;33mW (58288) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (58338) TCA8418: Got keyboard event raw 0xc4 scancode 0xe6[0m
+[0;33mW (58358) TCA8418: Got keyboard event raw 0x33 scancode 0x50[0m
+[0;33mW (58548) TCA8418: Got keyboard event raw 0x44 scancode 0xe6[0m
+[0;33mW (58618) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (58678) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (58688) TCA8418: Got keyboard event raw 0xb8 scancode 0xe5[0m
+[0;33mW (58838) TCA8418: Got keyboard event raw 0x38 scancode 0xe5[0m
+[0;33mW (58858) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (58948) TCA8418: Got keyboard event raw 0xb3 scancode 0x50[0m
+[0;33mW (58948) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (59008) TCA8418: Got keyboard event raw 0xc4 scancode 0xe6[0m
+[0;33mW (59038) TCA8418: Got keyboard event raw 0x33 scancode 0x50[0m
+[0;33mW (59118) TCA8418: Got keyboard event raw 0x44 scancode 0xe6[0m
+[0;33mW (59148) TCA8418: Got keyboard event raw 0xb6 scancode 0x38[0m
+[0;33mW (59208) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (59228) TCA8418: Got keyboard event raw 0x36 scancode 0x38[0m
+[0;33mW (59298) TCA8418: Got keyboard event raw 0xb8 scancode 0xe5[0m
+[0;33mW (59408) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (59408) TCA8418: Got keyboard event raw 0x38 scancode 0xe5[0m
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_speakup.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_speakup.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_true.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_true.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_internetcleanupfoundation.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_internetcleanupfoundation.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_deloitte.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_deloitte.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_leaseweb.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_leaseweb.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_secura_bureau_veritas.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_secura_bureau_veritas.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_prefix_broker.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_prefix_broker.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_espressif.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_espressif.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_falco_networks.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_falco_networks.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_stegen.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_stegen.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_ripe.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_ripe.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_cyso.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_cyso.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_surf.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_surf.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_hackerhosting.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_hackerhosting.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_schubergphilis.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_schubergphilis.png
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_fs.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_fs.png
+New sponsor image ready
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_juniper.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_juniper.png
+Seen all sponsors!
+New sponsor image ready
+Init: Free main memory: 235800, free PSRAM pages: 381/511, free framebuffer pages: 271/399 running processes 2
+Loading APPS:[WHY2025_SPONSORS.IMAGES]logo_s-unit.png
+Done loading APPS:[WHY2025_SPONSORS.IMAGES]logo_s-unit.png
+New sponsor image ready
+[0;33mW (111618) TCA8418: Got keyboard event raw 0x81 scancode 0x29[0m
+[0;33mW (111698) HADES: Stripping PID 1 of its worldy possessions[0m
+Process sponsors (APPS:[why2025_sponsors]why2025_sponsors.elf) ended
+[0;33mW (111698) HADES: Task 1 escorted to my realm[0m
+[0;33mW (111708) HADES: Stripping PID 2 of its worldy possessions[0m
+[0;33mW (111708) task: Cleaning up open filehandle 0[0m
+[0;33mW (111708) task: Cleaning up open filehandle 1[0m
+[0;33mW (111718) task: Cleaning up open filehandle 2[0m
+[0;33mW (111718) task: Cleaning up window 0x4ff4b874[0m
+[0;33mW (111728) HADES: Task 2 escorted to my realm[0m
+[0;33mW (111728) compositor: Destroying framebuffer 0 for window 0x4ff4b874[0m
+[0;33mW (111738) compositor: Destroying framebuffer 1 for window 0x4ff4b874[0m
+[0;33mW (111768) ELF: No VMEM info found[0m
+[0;33mW (111768) task: Start ELF file entrypoint at 0x4a002c38[0m
+[0;33mW (111788) TCA8418: Got keyboard event raw 0x01 scancode 0x29[0m
+Currently installed applications: 
+Name: WiFi Setup
+  UID: wifi_setup
+  Version: 1
+  Binary : wifi_setup
+Name: why2025_sponsors
+  UID: why2025_sponsors
+  Version: 1
+  Binary : why2025_sponsors.elf
+Name: WHY 2025 OTA updater
+  UID: why2025_ota
+  Version: 3
+  Binary : why2025_ota.elf
+Name: Name tag
+  UID: why2025_namebadge
+  Version: 6
+  Binary : why2025_namebadge.elf
+Name: why2025_firmware_ota_c6
+  UID: why2025_firmware_ota_c6
+  Version: 1
+  Binary : 
+Name: SNAKE!
+  UID: sdl_test
+  Version: 3
+  Binary : sdl_test.elf
+Name: hello
+  UID: hello
+  Version: 5
+  Binary : hello.elf
+Name: BadgeVMS Launcher
+  UID: badgevms_launcher
+  Version: 3
+  Binary : badgevms_launcher.elf
+Starting application launcher with 6 applications
+[0;33mW (111908) compositor: Allocated framebuffer at 0x4ff4bf64, pixels at 0x48b10000, size 17, dimensions 720 x 720[0m
+[0;33mW (111918) compositor: Allocated framebuffer at 0x4ff4b75c, pixels at 0x48d10000, size 17, dimensions 720 x 720[0m
+Init: Free main memory: 252804, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (116758) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (116768) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (116888) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (119628) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+Init: Free main memory: 252804, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (119778) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (119998) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (120168) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (120838) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (120848) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (121118) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (125148) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (125158) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (125448) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+Init: Free main memory: 252804, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (126708) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (126818) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (126858) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (126968) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (127038) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (127148) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (127188) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (127278) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (127348) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (127458) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (127518) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (127628) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (127718) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (127808) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (127888) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (127998) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (128388) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (128538) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (128578) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (128688) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (128728) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (128828) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (128888) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (128978) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (129068) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (129178) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (129288) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (129458) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (130058) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (130068) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (130168) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (130258) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (130268) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (130318) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (130408) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (130418) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (130498) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (130538) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (130578) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (130648) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (130718) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (130728) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (130808) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (130868) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (130878) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (130978) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (131018) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (131058) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (131108) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+Init: Free main memory: 252804, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (134178) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (134188) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (134348) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+Init: Free main memory: 252804, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252824, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252824, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252824, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252824, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252824, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (172508) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (172678) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (172808) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (172938) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (173048) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (173178) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (173268) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (173418) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (173658) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+Init: Free main memory: 252824, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (173808) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (174108) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (174258) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (174458) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (174648) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (174998) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (175208) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (175338) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (175448) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (176628) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (176778) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (177298) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: SNAKE!
+[0;33mW (177438) ELF: No VMEM info found[0m
+Task 3 caused an unhandled exception, Cerberos will deal with it
+[0;33mW (177458) HADES: Stripping PID 3 of its worldy possessions[0m
+[0;33mW (177458) task: Cleaning up open filehandle 0[0m
+[0;33mW (177458) task: Cleaning up open filehandle 1[0m
+[0;33mW (177458) task: Cleaning up open filehandle 2[0m
+[0;33mW (177458) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (177458) task: Cleaning up window 0x4ff4b914[0m
+[0;33mW (177468) HADES: Task 3 escorted to my realm[0m
+[0;33mW (177488) HADES: Stripping PID 4 of its worldy possessions[0m
+[0;33mW (177488) task: Cleaning up open filehandle 0[0m
+[0;33mW (177488) task: Cleaning up open filehandle 1[0m
+[0;33mW (177488) compositor: Destroying framebuffer 0 for window 0x4ff4b914[0m
+[0;33mW (177488) task: Cleaning up open filehandle 2[0m
+[0;33mW (177498) compositor: Destroying framebuffer 1 for window 0x4ff4b914[0m
+[0;33mW (177498) HADES: Task 4 escorted to my realm[0m
+[0;33mW (177528) ELF: No VMEM info found[0m
+[0;33mW (177538) task: Start ELF file entrypoint at 0x4a002c38[0m
+Currently installed applications: 
+Name: WiFi Setup
+  UID: wifi_setup
+  Version: 1
+  Binary : wifi_setup
+Name: why2025_sponsors
+  UID: why2025_sponsors
+  Version: 1
+  Binary : why2025_sponsors.elf
+Name: WHY 2025 OTA updater
+  UID: why2025_ota
+  Version: 3
+  Binary : why2025_ota.elf
+Name: Name tag
+  UID: why2025_namebadge
+  Version: 6
+  Binary : why2025_namebadge.elf
+Name: why2025_firmware_ota_c6
+  UID: why2025_firmware_ota_c6
+  Version: 1
+  Binary : 
+Name: SNAKE!
+  UID: sdl_test
+  Version: 3
+  Binary : sdl_test.elf
+Name: hello
+  UID: hello
+  Version: 5
+  Binary : hello.elf
+Name: BadgeVMS Launcher
+  UID: badgevms_launcher
+  Version: 3
+  Binary : badgevms_launcher.elf
+Starting application launcher with 6 applications
+[0;33mW (177668) compositor: Allocated framebuffer at 0x4ff4beb0, pixels at 0x48b10000, size 17, dimensions 720 x 720[0m
+[0;33mW (177678) compositor: Allocated framebuffer at 0x4ff4bef4, pixels at 0x48d10000, size 17, dimensions 720 x 720[0m
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (194018) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (194028) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (194238) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (202268) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: WiFi Setup
+[0;33mW (202288) task: Could not open APPS:[wifi_setup]wifi_setup[0m
+[0;33mW (202398) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+Init: Free main memory: 252832, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (223248) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (223338) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (223448) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (223528) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (223638) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (223678) TCA8418: Got keyboard event raw 0xb5 scancode 0x4f[0m
+[0;33mW (223748) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (223748) TCA8418: Got keyboard event raw 0x35 scancode 0x4f[0m
+[0;33mW (226148) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (226308) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (227138) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: SNAKE!
+[0;33mW (227288) ELF: No VMEM info found[0m
+Task 5 caused an unhandled exception, Cerberos will deal with it
+[0;33mW (227298) HADES: Stripping PID 5 of its worldy possessions[0m
+[0;33mW (227298) task: Cleaning up open filehandle 0[0m
+[0;33mW (227298) task: Cleaning up open filehandle 1[0m
+[0;33mW (227298) task: Cleaning up open filehandle 2[0m
+[0;33mW (227298) task: Cleaning up window 0x4ff4b874[0m
+[0;33mW (227308) HADES: Task 5 escorted to my realm[0m
+[0;33mW (227318) HADES: Stripping PID 6 of its worldy possessions[0m
+[0;33mW (227318) task: Cleaning up open filehandle 0[0m
+[0;33mW (227318) task: Cleaning up open filehandle 1[0m
+[0;33mW (227318) compositor: Destroying framebuffer 0 for window 0x4ff4b874[0m
+[0;33mW (227328) task: Cleaning up open filehandle 2[0m
+[0;33mW (227328) compositor: Destroying framebuffer 1 for window 0x4ff4b874[0m
+[0;33mW (227338) HADES: Task 6 escorted to my realm[0m
+[0;33mW (227338) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (227378) ELF: No VMEM info found[0m
+[0;33mW (227378) task: Start ELF file entrypoint at 0x4a002c38[0m
+Currently installed applications: 
+Name: WiFi Setup
+  UID: wifi_setup
+  Version: 1
+  Binary : wifi_setup
+Name: why2025_sponsors
+  UID: why2025_sponsors
+  Version: 1
+  Binary : why2025_sponsors.elf
+Name: WHY 2025 OTA updater
+  UID: why2025_ota
+  Version: 3
+  Binary : why2025_ota.elf
+Name: Name tag
+  UID: why2025_namebadge
+  Version: 6
+  Binary : why2025_namebadge.elf
+Name: why2025_firmware_ota_c6
+  UID: why2025_firmware_ota_c6
+  Version: 1
+  Binary : 
+Name: SNAKE!
+  UID: sdl_test
+  Version: 3
+  Binary : sdl_test.elf
+Name: hello
+  UID: hello
+  Version: 5
+  Binary : hello.elf
+Name: BadgeVMS Launcher
+  UID: badgevms_launcher
+  Version: 3
+  Binary : badgevms_launcher.elf
+Starting application launcher with 6 applications
+[0;33mW (227518) compositor: Allocated framebuffer at 0x4ff4beb0, pixels at 0x48b10000, size 17, dimensions 720 x 720[0m
+[0;33mW (227528) compositor: Allocated framebuffer at 0x4ff4bef4, pixels at 0x48d10000, size 17, dimensions 720 x 720[0m
+Init: Free main memory: 252816, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (229108) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (229148) TCA8418: Got keyboard event raw 0xb3 scancode 0x50[0m
+[0;33mW (229208) TCA8418: Got keyboard event raw 0x33 scancode 0x50[0m
+[0;33mW (229298) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (229968) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (230098) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (230208) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (230298) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (230428) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (230538) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (230638) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (230728) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+[0;33mW (233178) TCA8418: Got keyboard event raw 0xb4 scancode 0x51[0m
+[0;33mW (233368) TCA8418: Got keyboard event raw 0x34 scancode 0x51[0m
+Init: Free main memory: 252816, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (235448) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: hello
+[0;33mW (235458) ELF: No VMEM info found[0m
+[0;33mW (235468) task: Start ELF file entrypoint at 0x4a000730[0m
+Hello BadgeVMS world!
+[0;33mW (235478) HADES: Stripping PID 8 of its worldy possessions[0m
+[0;33mW (235478) task: Cleaning up open filehandle 0[0m
+[0;33mW (235478) task: Cleaning up open filehandle 1[0m
+[0;33mW (235478) task: Cleaning up open filehandle 2[0m
+[0;33mW (235478) HADES: Task 8 escorted to my realm[0m
+[0;33mW (235538) TCA8418: Got keyboard event raw 0xba scancode 0x34[0m
+[0;33mW (235628) TCA8418: Got keyboard event raw 0x3a scancode 0x34[0m
+[0;33mW (235658) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (236208) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: hello
+[0;33mW (236218) ELF: No VMEM info found[0m
+[0;33mW (236218) task: Start ELF file entrypoint at 0x4a000730[0m
+Hello BadgeVMS world!
+[0;33mW (236228) HADES: Stripping PID 9 of its worldy possessions[0m
+[0;33mW (236228) task: Cleaning up open filehandle 0[0m
+[0;33mW (236228) task: Cleaning up open filehandle 1[0m
+[0;33mW (236228) task: Cleaning up open filehandle 2[0m
+[0;33mW (236238) HADES: Task 9 escorted to my realm[0m
+[0;33mW (236378) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (240148) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+Init: Free main memory: 252816, free PSRAM pages: 429/511, free framebuffer pages: 239/399 running processes 1
+[0;33mW (240598) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (240858) TCA8418: Got keyboard event raw 0xb7 scancode 0x52[0m
+[0;33mW (240988) TCA8418: Got keyboard event raw 0x37 scancode 0x52[0m
+[0;33mW (241848) TCA8418: Got keyboard event raw 0xbb scancode 0x28[0m
+Launching: Name tag
+[0;33mW (241878) ELF: No VMEM info found[0m
+[0;33mW (241888) task: Start ELF file entrypoint at 0x4a011e00[0m
+Task 7 caused an unhandled exception, Cerberos will deal with it
+[0;33mW (241918) HADES: Stripping PID 7 of its worldy possessions[0m
+[0;33mW (241918) task: Cleaning up open filehandle 0[0m
+[0;33mW (241918) task: Cleaning up open filehandle 1[0m
+[0;33mW (241928) task: Cleaning up open filehandle 2[0m
+[0;33mW (241928) task: Cleaning up window 0x4ff4b874[0m
+[0;33mW (241938) HADES: Task 7 escorted to my realm[0m
+[0;33mW (241948) compositor: Destroying framebuffer 0 for window 0x4ff4b874[0m
+[0;33mW (241948) compositor: Destroying framebuffer 1 for window 0x4ff4b874[0m
+[0;33mW (241948) HADES: Stripping PID 10 of its worldy possessions[0m
+[0;33mW (241958) task: Cleaning up open filehandle 0[0m
+[0;33mW (241958) task: Cleaning up open filehandle 1[0m
+[0;33mW (241968) task: Cleaning up open filehandle 2[0m
+[0;33mW (241968) task: Cleaning up window 0x4ff50b80[0m
+[0;33mW (241978) HADES: Task 10 escorted to my realm[0m
+[0;33mW (241978) compositor: Destroying framebuffer 0 for window 0x4ff50b80[0m
+[0;33mW (241988) compositor: Destroying framebuffer 1 for window 0x4ff50b80[0m
+[0;33mW (241988) TCA8418: Got keyboard event raw 0x3b scancode 0x28[0m
+[0;33mW (242018) ELF: No VMEM info found[0m
+[0;33mW (242018) task: Start ELF file entrypoint at 0x4a002c38[0m
+Currently installed applications: 
+Name: WiFi Setup
+  UID: wifi_setup
+  Version: 1
+  Binary : wifi_setup
+Name: why2025_sponsors
+  UID: why2025_sponsors
+  Version: 1
+  Binary : why2025_sponsors.elf
+Name: WHY 2025 OTA updater
+  UID: why2025_ota
+  Version: 3
+  Binary : why2025_ota.elf
+Name: Name tag
+  UID: why2025_namebadge
+  Version: 6
+  Binary : why2025_namebadge.elf
+Name: why2025_firmware_ota_c6
+  UID: why2025_firmware_ota_c6
+  Version: 1
+  Binary : 
+Name: SNAKE!
+  UID: sdl_test
+  Version: 3
+  Binary : sdl_test.elf
+Name: hello
+  UID: hello
+  Version: 5
+  Binary : hello.elf
+Na

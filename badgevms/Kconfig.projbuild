@@ -1,0 +1,33 @@
+menu "WHY2025 Custom Board Selection"
+
+    choice
+        prompt "Select your WHY2025 target board"
+        default WHY2025_TARGET_WHY2025_V21
+
+        config WHY2025_TARGET_WHY2025_V21
+            bool "why2025 v2.1 carrier board"
+
+        config WHY2025_TARGET_WHY2025_V2
+            bool "why2025 v2.5 carrier board (older than v2.1)"
+
+    endchoice
+
+    choice
+        prompt "Screen manufacturer"
+        depends on WHY2025_TARGET_WHY2025_V21 || WHY2025_TARGET_WHY2025_V2
+        default SCREEN_TYPE_MOUNTAIN if WHY2025_TARGET_WHY2025_V2
+        default SCREEN_TYPE_BONO if WHY2025_TARGET_WHY2025_V21
+
+        config SCREEN_TYPE_MOUNTAIN
+            bool "Screen manufactured by Mountain (Blue border)"
+            help 
+                The screens have a blue border where the ribbon cable is connected
+
+        config SCREEN_TYPE_BONO
+            bool "Screen manufactured by Bono (Black border)"
+            help 
+                The screens have a black border where the ribbon cable is connected
+    endchoice
+
+endmenu
+

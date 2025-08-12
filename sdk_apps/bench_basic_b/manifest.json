@@ -1,0 +1,10 @@
+{
+    "unique_identifier": "bench_basic_b",
+    "name": "bench_basic_b",
+    "author": "Team:Badge",
+    "version": "1",
+    "interpreter": "",
+    "metadata_file": "",
+    "binary_path": "bench_basic_b.elf",
+    "source": 1
+}

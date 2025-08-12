@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="pypi:repository-version" content="1.0">
+        <title>Simple index</title>
+    </head>
+    <body>
+
+<a href="/pypi/isort/isort-5.12.0-py3-none-any.whl">isort-5.12.0-py3-none-any.whl</a><br/>
+<a href="/pypi/isort/isort-5.13.0-py3-none-any.whl">isort-5.13.0-py3-none-any.whl</a><br/>
+<a href="/pypi/isort/isort-5.13.2-py3-none-any.whl">isort-5.13.2-py3-none-any.whl</a><br/>
+    </body>
+</html>

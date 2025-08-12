@@ -1,0 +1,10 @@
+{
+    "unique_identifier": "curl_test",
+    "name": "curl_test",
+    "author": "Team:Badge",
+    "version": "1",
+    "interpreter": "",
+    "metadata_file": "",
+    "binary_path": "curl_test.elf",
+    "source": 1
+}

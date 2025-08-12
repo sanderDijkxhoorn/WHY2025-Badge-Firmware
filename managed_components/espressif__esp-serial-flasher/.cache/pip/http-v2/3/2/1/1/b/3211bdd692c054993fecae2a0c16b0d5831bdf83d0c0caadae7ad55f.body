@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="pypi:repository-version" content="1.0">
+        <title>Simple index</title>
+    </head>
+    <body>
+
+<a href="/pypi/prettytable/prettytable-1.0.1-py2.py3-none-any.whl">prettytable-1.0.1-py2.py3-none-any.whl</a><br/>
+<a href="/pypi/prettytable/prettytable-3.10.0-py3-none-any.whl">prettytable-3.10.0-py3-none-any.whl</a><br/>
+<a href="/pypi/prettytable/prettytable-3.10.2-py3-none-any.whl">prettytable-3.10.2-py3-none-any.whl</a><br/>
+<a href="/pypi/prettytable/prettytable-3.11.0-py3-none-any.whl">prettytable-3.11.0-py3-none-any.whl</a><br/>
+<a href="/pypi/prettytable/prettytable-3.8.0-py3-none-any.whl">prettytable-3.8.0-py3-none-any.whl</a><br/>
+<a href="/pypi/prettytable/prettytable-3.9.0-py3-none-any.whl">prettytable-3.9.0-py3-none-any.whl</a><br/>
+    </body>
+</html>

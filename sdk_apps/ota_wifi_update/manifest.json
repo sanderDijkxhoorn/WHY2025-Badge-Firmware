@@ -1,0 +1,10 @@
+{
+    "unique_identifier": "ota_wifi_update",
+    "name": "ota_wifi_update",
+    "author": "Team:Badge",
+    "version": "1",
+    "interpreter": "",
+    "metadata_file": "",
+    "binary_path": "ota_wifi_update.elf",
+    "source": 1
+}

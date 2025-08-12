@@ -1,0 +1,2 @@
+source /Users/zyki/Work/firmware/build/bootloader/gdbinit/symbols
+source /Users/zyki/Work/firmware/build/bootloader/gdbinit/connect

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="pypi:repository-version" content="1.0">
+        <title>Simple index</title>
+    </head>
+    <body>
+
+<a href="/pypi/ruamel-yaml-clib/ruamel.yaml.clib-0.2.12-cp311-cp311-linux_armv7l.whl">ruamel.yaml.clib-0.2.12-cp311-cp311-linux_armv7l.whl</a><br/>
+<a href="/pypi/ruamel-yaml-clib/ruamel.yaml.clib-0.2.12-cp39-cp39-linux_armv7l.whl">ruamel.yaml.clib-0.2.12-cp39-cp39-linux_armv7l.whl</a><br/>
+    </body>
+</html>

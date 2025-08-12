@@ -1,0 +1,110 @@
+Command: ninja all
+[1/35] Building ASM object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/__/__/init.toml.S.obj
+[2/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/user_event.c.obj
+[3/35] Copying libsdl3.a to SDK staging
+[4/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/ota.c.obj
+[5/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/why2025_firmware.c.obj
+[6/35] cd /Users/zyki/Work/firmware/build/flash_storage && /opt/homebrew/bin/cmake -E rm -rf -- /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E make_directory /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E copy_directory /Users/zyki/Work/firmware/flash_storage/skel /Users/zyki/Work/firmware/build/storage_staging
+[7/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/pathfuncs.c.obj
+[8/35] Performing build step for 'bootloader'
+[1/1] cd /Users/zyki/Work/firmware/build/bootloader/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /Users/zyki/Work/firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x55c0 bytes. 0xa40 bytes (11%) free.
+[9/35] No install step for 'bootloader'
+[10/35] Copying hello manifest, skel and stripped elf to storage staging
+[11/35] Copying sdl_test manifest, skel and stripped elf to storage staging
+[12/35] Copying why2025_sponsors manifest, skel and stripped elf to storage staging
+[13/35] Copying why2025_ota manifest, skel and stripped elf to storage staging
+[14/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/drivers/wifi.c.obj
+FAILED: [code=1] esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/drivers/wifi.c.obj 
+/Users/zyki/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DHAVE_MMAP=0 -DHAVE_MORECORE=1 -DHAVE_MREMAP=0 -DIDF_VER=\"v5.5-dirty\" -DLOG_LOCAL_LEVEL=ESP_LOG_VERBOSE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DMD5_ENABLED=1 -DMORECORE=why_sbrk -DMORECORE_CONTIGUOUS=1 -DNO_MALLINFO -DSERIAL_FLASHER_BOOT_HOLD_TIME_MS=50 -DSERIAL_FLASHER_BOOT_INVERT=false -DSERIAL_FLASHER_DEBUG_TRACE=false -DSERIAL_FLASHER_INTERFACE_UART -DSERIAL_FLASHER_RESET_HOLD_TIME_MS=100 -DSERIAL_FLASHER_RESET_INVERT=false -DSERIAL_FLASHER_WRITE_BLOCK_RETRIES=3 -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUSE_DL_PREFIX -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Dmalloc_getpagesize=0x10000 -I/Users/zyki/Work/firmware/build/config -I/Users/zyki/Work/firmware/badgevms -I/Users/zyki/Work/firmware/badgevms/include -I/Users/zyki/esp/v5.5/esp-idf/components/newlib/platform_include -I/Users/zyki/Work/firmware/components/freertos/config/include -I/Users/zyki/Work/firmware/components/freertos/config/include/freertos -I/Users/zyki/Work/firmware/components/freertos/config/riscv/include -I/Users/zyki/Work/firmware/components/freertos/FreeRTOS-Kernel/include -I/Users/zyki/Work/firmware/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/Users/zyki/Work/firmware/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/Users/zyki/Work/firmware/components/freertos/esp_additions/include -I/Users/zyki/Work/firmware/components/esp_hw_support/include -I/Users/zyki/Work/firmware/components/esp_hw_support/include/soc -I/Users/zyki/Work/firmware/components/esp_hw_support/include/soc/esp32p4 -I/Users/zyki/Work/firmware/components/esp_hw_support/dma/include -I/Users/zyki/Work/firmware/components/esp_hw_support/ldo/include -I/Users/zyki/Work/firmware/components/esp_hw_support/debug_probe/include -I/Users/zyki/Work/firmware/components/esp_hw_support/mspi_timing_tuning/include -I/Users/zyki/Work/firmware/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/Users/zyki/Work/firmware/components/esp_hw_support/power_supply/include -I/Users/zyki/Work/firmware/components/esp_hw_support/port/esp32p4/. -I/Users/zyki/Work/firmware/components/esp_hw_support/port/esp32p4/include -I/Users/zyki/Work/firmware/components/esp_hw_support/port/esp32p4/private_include -I/Users/zyki/Work/firmware/components/esp_hw_support/mspi_timing_tuning/port/esp32p4/. -I/Users/zyki/esp/v5.5/esp-idf/components/heap/include -I/Users/zyki/esp/v5.5/esp-idf/components/heap/tlsf -I/Users/zyki/esp/v5.5/esp-idf/components/log/include -I/Users/zyki/esp/v5.5/esp-idf/components/soc/include -I/Users/zyki/esp/v5.5/esp-idf/components/soc/esp32p4 -I/Users/zyki/esp/v5.5/esp-idf/components/soc/esp32p4/include -I/Users/zyki/esp/v5.5/esp-idf/components/soc/esp32p4/register -I/Users/zyki/Work/firmware/components/hal/platform_port/include -I/Users/zyki/Work/firmware/components/hal/esp32p4/include -I/Users/zyki/Work/firmware/components/hal/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_rom/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/include/esp32p4 -I/Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4 -I/Users/zyki/esp/v5.5/esp-idf/components/esp_common/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_system/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_system/port/soc -I/Users/zyki/esp/v5.5/esp-idf/components/esp_system/port/include/riscv -I/Users/zyki/esp/v5.5/esp-idf/components/esp_system/port/include/private -I/Users/zyki/esp/v5.5/esp-idf/components/riscv/include -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/include -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/include/apps -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/include/apps/sntp -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/lwip/src/include -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/port/include -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/port/freertos/include -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/port/esp32xx/include -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/zyki/esp/v5.5/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/zyki/esp/v5.5/esp-idf/components/app_update/include -I/Users/zyki/esp/v5.5/esp-idf/components/bootloader_support/include -I/Users/zyki/esp/v5.5/esp-idf/components/bootloader_support/bootloader_flash/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_app_format/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_bootloader_format/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_partition/include -I/Users/zyki/Work/firmware/components/bmi270 -I/Users/zyki/Work/firmware/components/bmi270/bmi270_examples -I/Users/zyki/esp/v5.5/esp-idf/components/driver/deprecated -I/Users/zyki/esp/v5.5/esp-idf/components/driver/i2c/include -I/Users/zyki/esp/v5.5/esp-idf/components/driver/touch_sensor/include -I/Users/zyki/esp/v5.5/esp-idf/components/driver/twai/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_pm/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_ringbuf/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_gpio/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_pcnt/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_gptimer/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_spi/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_mcpwm/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_ana_cmpr/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_i2s/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdmmc/include -I/Users/zyki/esp/v5.5/esp-idf/components/sdmmc/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdspi/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdio/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_dac/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_rmt/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_tsens/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdm/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_i2c/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_uart/include -I/Users/zyki/esp/v5.5/esp-idf/components/vfs/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_ledc/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_parlio/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_usb_serial_jtag/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_driver_twai/include -I/Users/zyki/Work/firmware/components/elf_loader/include -I/Users/zyki/Work/firmware/components/esp-tls -I/Users/zyki/Work/firmware/components/esp-tls/esp-tls-crypto -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/port/include -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/mbedtls/include -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/mbedtls/library -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/esp_crt_bundle/include -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/Users/zyki/esp/v5.5/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/Users/zyki/Work/firmware/components/esp_driver_ppa/include -I/Users/zyki/Work/firmware/components/esp_http_client/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_event/include -I/Users/zyki/Work/firmware/components/esp_lcd/include -I/Users/zyki/Work/firmware/components/esp_lcd/interface -I/Users/zyki/Work/firmware/components/esp_lcd/rgb/include -I/Users/zyki/Work/firmware/components/esp_lcd/dsi/include -I/Users/zyki/Work/firmware/components/esp_lcd_st7703/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_mm/include -I/Users/zyki/Work/firmware/components/esp_psram/include -I/Users/zyki/Work/firmware/components/esp_psram/xip_impl/include -I/Users/zyki/Work/firmware/components/esp_tca8418/include -I/Users/zyki/Work/firmware/managed_components/espressif__i2c_bus/include -I/Users/zyki/Work/firmware/managed_components/espressif__esp_wifi_remote/idf_v5.5/include/injected -I/Users/zyki/esp/v5.5/esp-idf/components/esp_wifi/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_netif/include -I/Users/zyki/Work/firmware/managed_components/espressif__esp_wifi_remote/include -I/Users/zyki/Work/firmware/managed_components/espressif__esp_wifi_remote/idf_v5.5/include -I/Users/zyki/esp/v5.5/esp-idf/components/fatfs/diskio -I/Users/zyki/esp/v5.5/esp-idf/components/fatfs/src -I/Users/zyki/esp/v5.5/esp-idf/components/fatfs/vfs -I/Users/zyki/esp/v5.5/esp-idf/components/wear_levelling/include -I/Users/zyki/esp/v5.5/esp-idf/components/nvs_flash/include -I/Users/zyki/Work/firmware/components/sd_card -I/Users/zyki/esp/v5.5/esp-idf/components/esp_adc/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_adc/interface -I/Users/zyki/esp/v5.5/esp-idf/components/esp_adc/esp32p4/include -I/Users/zyki/esp/v5.5/esp-idf/components/esp_adc/deprecated/include -I/Users/zyki/esp/v5.5/esp-idf/components/spi_flash/include -I/Users/zyki/Work/firmware/managed_components/espressif__esp-serial-flasher/include -I/Users/zyki/Work/firmware/managed_components/espressif__esp-serial-flasher/port -I/Users/zyki/Work/firmware/managed_components/espressif__esp_hosted/host -I/Users/zyki/Work/firmware/managed_components/espressif__esp_hosted/host/api/include -march=rv32imafc_zicsr_zifencei_xesppie -mabi=ilp32f  -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -O2 -msave-restore -Wwrite-strings -fmacro-prefix-map=/Users/zyki/Work/firmware=. -fmacro-prefix-map=/Users/zyki/esp/v5.5/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -Wno-empty-body -Wno-stringop-overflow -Wno-char-subscripts -DBMI270_VER_MAJOR=1 -DBMI270_VER_MINOR=1 -DBMI270_VER_PATCH=0 -DELF_LOADER_VER_MAJOR=1 -DELF_LOADER_VER_MINOR=0 -DELF_LOADER_VER_PATCH=0 -DESP_LCD_ST7703_VER_MAJOR=1 -DESP_LCD_ST7703_VER_MINOR=0 -DESP_LCD_ST7703_VER_PATCH=3 -DI2C_BUS_VER_MAJOR=1 -DI2C_BUS_VER_MINOR=2 -DI2C_BUS_VER_PATCH=0 -MD -MT esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/drivers/wifi.c.obj -MF esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/drivers/wifi.c.obj.d -o esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/drivers/wifi.c.obj -c /Users/zyki/Work/firmware/badgevms/drivers/wifi.c
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c: In function 'wifi_connect_to':
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:513:39: warning: variable 's' set but not used [-Wunused-but-set-variable]
+  513 |     badgevms_wifi_connection_status_t s;
+      |                                       ^
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c: At top level:
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:153:27: warning: 'badgevms_to_esp_cipher' defined but not used [-Wunused-function]
+  153 | static wifi_cipher_type_t badgevms_to_esp_cipher(badgevms_wifi_cipher_type_t cipher) {
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:113:25: warning: 'badgevms_to_esp_authmode' defined but not used [-Wunused-function]
+  113 | static wifi_auth_mode_t badgevms_to_esp_authmode(badgevms_wifi_auth_mode_t mode) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+In function 'hermes_do_connect',
+    inlined from 'hermes' at /Users/zyki/Work/firmware/badgevms/drivers/wifi.c:359:21:
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:260:9: error: 'strncpy' output may be truncated copying 31 bytes from a string of length 32 [-Werror=stringop-truncation]
+  260 |         strncpy((char *)wifi_config.sta.ssid, ssid, sizeof(wifi_config.sta.ssid) - 1);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:262:13: error: 'strncpy' output may be truncated copying 63 bytes from a string of length 64 [-Werror=stringop-truncation]
+  262 |             strncpy((char *)wifi_config.sta.password, password, sizeof(wifi_config.sta.password) - 1);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+[15/35] Copying badgevms_launcher manifest, skel and stripped elf to storage staging
+[16/35] Completed 'bootloader'
+[17/35] Copying why2025_namebadge manifest, skel and stripped elf to storage staging
+[18/35] Copying wifi_setup manifest, skel and stripped elf to storage staging
+[19/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/wrapped_fs.c.obj
+[20/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/wrapped_funcs.c.obj
+/Users/zyki/Work/firmware/badgevms/wrapped_funcs.c: In function 'why_getenv':
+/Users/zyki/Work/firmware/badgevms/wrapped_funcs.c:128:16: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  128 |         return "line";
+      |                ^~~~~~
+/Users/zyki/Work/firmware/badgevms/wrapped_funcs.c: At top level:
+/Users/zyki/Work/firmware/badgevms/wrapped_funcs.c:245:34: warning: 'struct termios' declared inside parameter list will not be visible outside of this definition or declaration
+  245 | int why_tcgetattr(int fd, struct termios *termios_p) {
+      |                                  ^~~~~~~
+/Users/zyki/Work/firmware/badgevms/wrapped_funcs.c:249:62: warning: 'struct termios' declared inside parameter list will not be visible outside of this definition or declaration
+  249 | int why_tcsetattr(int fd, int optional_actions, const struct termios *termios_p) {
+      |                                                              ^~~~~~~
+[21/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/task.c.obj
+/Users/zyki/Work/firmware/badgevms/task.c: In function 'elf_task_path':
+/Users/zyki/Work/firmware/badgevms/task.c:402:39: warning: passing argument 2 of 'why_read' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  402 |     ssize_t r = why_read(fd, task_info->buffer, size);
+      |                              ~~~~~~~~~^~~~~~~~
+In file included from /Users/zyki/Work/firmware/badgevms/task.c:30:
+/Users/zyki/Work/firmware/badgevms/why_io.h:32:32: note: expected 'void *' but argument is of type 'const void *'
+   32 | ssize_t why_read(int fd, void *buf, size_t count);
+      |                          ~~~~~~^~~
+/Users/zyki/Work/firmware/badgevms/task.c: In function 'generic_thread':
+/Users/zyki/Work/firmware/badgevms/task.c:432:38: warning: passing argument 1 of 'task_info->thread_entry' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  432 |     task_info->thread_entry(task_info->buffer);
+      |                             ~~~~~~~~~^~~~~~~~
+/Users/zyki/Work/firmware/badgevms/task.c:432:38: note: expected 'void *' but argument is of type 'const void *'
+/Users/zyki/Work/firmware/badgevms/task.c: In function 'zeus':
+/Users/zyki/Work/firmware/badgevms/task.c:710:43: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  710 |                     task_info->file_path  = (char const *)command.buffer;
+      |                                           ^
+[22/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/thirdparty/cJSON.c.obj
+[23/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/thirdparty/tomlc17.c.obj
+[24/35] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/thirdparty/dlmalloc.c.obj
+[25/35] Performing build step for 'connectivity_esp_hosted'
+Executing action: all (aliases: build)
+Running ninja in directory /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build
+Executing "ninja all"...
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/bootloader/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/bootloader/bootloader.bin
+Bootloader binary size 0x5ec0 bytes. 0x2140 bytes (26%) free.
+[2/9] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/9] No install step for 'bootloader'
+[4/9] Completed 'bootloader'
+[5/9] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+warning: the int symbol ESP_HOSTED_BT_UART_PORT_ESP32 (defined at /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/main/Kconfig.projbuild:740) has a non-int range [BTDM_CTRL_HCI_UART_NO (undefined), BTDM_CTRL_HCI_UART_NO (undefined)]
+warning: the int symbol ESP_HOSTED_BT_UART_BAUDRATE_ESP32 (defined at /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/main/Kconfig.projbuild:746) has a non-int range [BTDM_CTRL_HCI_UART_BAUDRATE (undefined), BTDM_CTRL_HCI_UART_BAUDRATE (undefined)]
+[7/9] Linking CXX executable network_adapter.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/network_adapter.bin
+[9/9] cd /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/partition_table/partition-table.bin /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/network_adapter.bin
+network_adapter.bin binary size 0x112660 bytes. Smallest app partition is 0x180000 bytes. 0x6d9a0 bytes (29%) free.
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32c6 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 4MB --flash_freq 80m 0x0 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x10000 build/network_adapter.bin
+or from the "/Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build" directory
+ python -m esptool --chip esp32c6 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"
+ninja: build stopped: subcommand failed.

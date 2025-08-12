@@ -1,0 +1,10 @@
+{
+    "unique_identifier": "bmi270_test",
+    "name": "bmi270_test",
+    "author": "Team:Badge",
+    "version": "1",
+    "interpreter": "",
+    "metadata_file": "",
+    "binary_path": "bmi270_test.elf",
+    "source": 1
+}

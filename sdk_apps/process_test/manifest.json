@@ -1,0 +1,10 @@
+{
+    "unique_identifier": "process_test",
+    "name": "process_test",
+    "author": "Team:Badge",
+    "version": "1",
+    "interpreter": "",
+    "metadata_file": "",
+    "binary_path": "process_test.elf",
+    "source": 1
+}

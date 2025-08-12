@@ -1,0 +1,127 @@
+Command: /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/tools/idf_monitor.py -p /dev/cu.wchusbserial1110 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 1 --decode-panic backtrace /Users/zyki/Work/firmware/build/badgevms.elf /Users/zyki/Work/firmware/build/bootloader/bootloader.elf /Users/zyki/Work/firmware/build/app_elfs/hello.elf /Users/zyki/Work/firmware/build/app_elfs/why2025_sponsors.elf /Users/zyki/Work/firmware/build/app_elfs/why2025_namebadge.elf /Users/zyki/Work/firmware/build/app_elfs/sdl_test.elf /Users/zyki/Work/firmware/build/app_elfs/wifi_setup.elf /Users/zyki/Work/firmware/build/app_elfs/badgevms_launcher.elf /Users/zyki/Work/firmware/build/app_elfs/why2025_ota.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/why2025_namebadge/why2025_namebadge.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/why2025_sponsors/why2025_sponsors.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup/wifi_setup.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/badgevms_launcher/badgevms_launcher.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/sdl_test/sdl_test.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/why2025_ota/why2025_ota.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/hello/hello.elf -m '/Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/zyki/esp/v5.5/esp-idf/tools/idf.py'
+�Ʌ���         Unknown data ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x30f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x164c
+load:0x4ff29ed0,len:0xe14
+load:0x4ff2cbd0,len:0x3100
+entry 0x4ff29eda
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x7 (HP_SYS_HP_WDT_RESET),boot:0x30f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x164c
+load:0x4ff29ed0,len:0xe14
+load:0x4ff2cbd0,len:0x3100
+entry 0x4ff29eda
+[0;32mI (28) boot: ESP-IDF v5.5-dirty 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Aug 12 2025 16:52:56[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v1.0[0m
+[0;32mI (32) boot: efuse block revision: v0.3[0m
+[0;32mI (35) boot.esp32p4: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32p4: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32p4: SPI Flash Size : 16MB[0m
+[0;33mW (47) boot.esp32p4: CPU has been reset by WDT.[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (71) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (77) boot:  2 ota_0            OTA app          00 10 00010000 00200000[0m
+[0;32mI (84) boot:  3 ota_1            OTA app          00 11 00210000 00200000[0m
+[0;32mI (90) boot:  4 storage          Unknown data     01 81 00410000 00bb0000[0m
+[0;32mI (98) boot: End of partition table[0m
+[0;32mI (101) boot: No factory image, trying OTA 0[0m
+[0;32mI (104) esp_image: segment 0: paddr=00010020 vaddr=40110020 size=68038h (426040) map[0m
+[0;32mI (184) esp_image: segment 1: paddr=00078060 vaddr=30100000 size=00068h (   104) load[0m
+[0;32mI (185) esp_image: segment 2: paddr=000780d0 vaddr=4ff00000 size=07f48h ( 32584) load[0m
+[0;32mI (195) esp_image: segment 3: paddr=00080020 vaddr=40000020 size=1008d8h (1050840) map[0m
+[0;32mI (371) esp_image: segment 4: paddr=00180900 vaddr=4ff07f48 size=0fdf8h ( 65016) load[0m
+[0;32mI (385) esp_image: segment 5: paddr=00190700 vaddr=4ff17d80 size=05de0h ( 24032) load[0m
+[0;32mI (396) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (415) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (415) boot: Disabling RNG early entropy source...[0m
+sdio_mempool_create free:131004 min-free:131004 lfb-def:90112 lfb-8bit:90112
+
+BadgeVMS Initializing...
+[0;33mW (657) why2025_main: Free main memory: 355440[0m
+W memory_init: Initializing PSRAM
+W memory_init: Disabling caches and interrupts
+W memory_init: Unmapping all of our address space
+W memory_init: Mapping all pages for memory test
+W memory_init: Invalidate all pages for memory test
+W memory_init: Running memory test
+W memory_test: Starting write
+W memory_test: Writing back pages
+W memory_test: Invalidating pages
+W memory_test: Starting read
+W memory_init: Unmapping all of our address space
+W memory_init: Map allocator address space
+W memory_init: Invalidate allocator address space
+W memory_init: Re-enabling caches and interrupts
+W memory_init: Initialzing memory pool
+W memory_init: Disabling caches and interrupts
+W memory_init: Map framebuffer allocator address space
+W memory_init: Invalidate allocator address space
+W memory_init: Re-enabling caches and interrupts
+W memory_init: Initialzing framebuffer pool
+Pool 0: 
+Order 0, (1) 1 blocks (1 pages)
+Order 1, (2) 1 blocks (2 pages)
+Order 2, (4) 1 blocks (4 pages)
+Order 3, (8) 1 blocks (8 pages)
+Order 4, (16) 1 blocks (16 pages)
+Order 5, (32) 1 blocks (32 pages)
+Order 6, (64) 1 blocks (64 pages)
+Order 7, (128) 1 blocks (128 pages)
+Order 8, (256) 1 blocks (256 pages)
+Order 9, 0 blocks (0 pages)
+Waste: 0 blocks (0 pages)
+Total free pages: (calculated) 510 (stored) 510 max_order_free: 8
+[0;33mW (1077) ldo: The voltage value 0 is out of the recommended range [500, 2700][0m
+[1;31mE (1097) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (1097) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;33mW (1097) fatfs-sd: SD card not mounted[0m
+[1;31mE (1107) device: The device does not exist SD0[0m
+Connected to target
+Transmission rate changed.
+[0;33mW (3057) slave_c6_flasher: Target = 8[0m
+[0;33mW (3097) slave_c6_flasher: Bootloader MD5 match, skipping...[0m
+[0;33mW (3097) slave_c6_flasher: Partition table MD5 match, skipping...[0m
+[0;33mW (3707) slave_c6_flasher: Application MD5 match, skipping...[0m
+[0;33mW (3707) slave_c6_flasher: Resetting C6![0m
+[0;33mW (3817) slave_c6_flasher: Done![0m
+[0;33mW (6587) HERMES: Starting[0m
+[0;33mW (6597) compositor: Allocated framebuffer at 0x4ff423b8, pixels at 0x48510000, size 17, dimensions 720 x 720[0m
+[0;33mW (6607) compositor: Allocated framebuffer at 0x4ff41314, pixels at 0x48710000, size 17, dimensions 720 x 720[0m
+[0;33mW (6617) compositor: Allocated framebuffer at 0x4ff41344, pixels at 0x48910000, size 17, dimensions 720 x 720[0m
+[1;31mE (7157) TCA8418: Connect to keyboard, this message and the follow error are cosmetic. There is no error[0m
+[1;31mE (7157) TCA8418: keyboard initialization success[0m
+[0;33mW (7167) i2c_bus: i2c0 has been inited, return handle directly, ref_counter=1[0m
+[0;33mW (7167) i2c_bus: i2c0 has been inited, return handle directly, ref_counter=1[0m
+[0;33mW (9017) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (9027) wifi: retry to connect to the AP[0m
+[0;33mW (10917) BMI270: BMI270 initialized[0m
+[0;33mW (10917) compositor: Got framebuffer[0]: 0x48510000[0m
+[0;33mW (10927) compositor: Got framebuffer[1]: 0x48710000[0m
+[0;33mW (10937) compositor: Got framebuffer[2]: 0x48910000[0m
+BadgeVMS is ready
+[0;33mW (10937) why2025_main: Free main memory: 272736, free PSRAM pages: 461/511, running processes 0[0m
+[0;33mW (11087) init: Updating FLASH0:init.toml[0m
+Loading FLASH0:init.toml
+[1;31mE (11287) device: The device does not exist SD0[0m
+[0;33mW (11287) init: Cannot open SD0:init.toml[0m
+Failed to load SD0:init.toml
+
+Startup Configuration:
+
+Initial startup phase...
+Bootup successful, marking OTA partition valid
+[0;33mW (11287) why_ota: Running partition type 0 subtype 16 (offset 0x00010000)[0m
+Entering main supervision loop...
+[0;33mW (11437) wifi: unexpected wifi disconnect, reconnecting[0m
+[0;33mW (11437) wifi: retry to connect to the AP[0m
+[0;33mW (13627) ELF: No VMEM info found[0m
+[0;33mW (13627) task: 

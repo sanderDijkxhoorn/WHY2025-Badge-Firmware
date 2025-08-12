@@ -1,0 +1,1 @@
+cmd='/opt/homebrew/bin/cmake;-E;env;IDF_TARGET=esp32c6;idf.py;reconfigure'

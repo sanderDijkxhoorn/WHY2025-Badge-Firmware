@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/zyki/Work/firmware/build/CMakeFiles/connectivity_esp_hosted"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/CMakeFiles/connectivity_esp_hosted.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/CMakeFiles/connectivity_esp_hosted-complete.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-build.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-configure.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-download.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-install.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-mkdir.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-patch.rule"
+		},
+		{
+			"file" : "/Users/zyki/Work/firmware/build/connectivity_esp_hosted-prefix/src/connectivity_esp_hosted-stamp/connectivity_esp_hosted-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"connectivity_esp_hosted"
+		],
+		"name" : "connectivity_esp_hosted"
+	}
+}

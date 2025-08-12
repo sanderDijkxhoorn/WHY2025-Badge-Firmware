@@ -1,0 +1,61 @@
+Command: ninja all
+[1/24] Copying libsdl3.a to SDK staging
+[2/24] cd /Users/zyki/Work/firmware/build/flash_storage && /opt/homebrew/bin/cmake -E rm -rf -- /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E make_directory /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E copy_directory /Users/zyki/Work/firmware/flash_storage/skel /Users/zyki/Work/firmware/build/storage_staging
+[3/24] Performing build step for 'bootloader'
+[1/1] cd /Users/zyki/Work/firmware/build/bootloader/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /Users/zyki/Work/firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x55c0 bytes. 0xa40 bytes (11%) free.
+[4/24] No install step for 'bootloader'
+[5/24] Copying hello manifest, skel and stripped elf to storage staging
+[6/24] Copying badgevms_launcher manifest, skel and stripped elf to storage staging
+[7/24] Copying sdl_test manifest, skel and stripped elf to storage staging
+[8/24] Copying why2025_ota manifest, skel and stripped elf to storage staging
+[9/24] Copying why2025_namebadge manifest, skel and stripped elf to storage staging
+[10/24] Copying why2025_sponsors manifest, skel and stripped elf to storage staging
+[11/24] Completed 'bootloader'
+[12/24] Building C object esp-idf/badgevms/CMakeFiles/__idf_badgevms.dir/drivers/wifi.c.obj
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:153:27: warning: 'badgevms_to_esp_cipher' defined but not used [-Wunused-function]
+  153 | static wifi_cipher_type_t badgevms_to_esp_cipher(badgevms_wifi_cipher_type_t cipher) {
+      |                           ^~~~~~~~~~~~~~~~~~~~~~
+/Users/zyki/Work/firmware/badgevms/drivers/wifi.c:113:25: warning: 'badgevms_to_esp_authmode' defined but not used [-Wunused-function]
+  113 | static wifi_auth_mode_t badgevms_to_esp_authmode(badgevms_wifi_auth_mode_t mode) {
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+[13/24] Building app ELF: wifi_setup
+[14/24] Copying wifi_setup manifest, skel and stripped elf to storage staging
+[15/24] Linking C static library esp-idf/badgevms/libbadgevms.a
+[16/24] Performing build step for 'connectivity_esp_hosted'
+Executing action: all (aliases: build)
+Running ninja in directory /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build
+Executing "ninja all"...
+[1/4] cd /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/partition_table/partition-table.bin /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/network_adapter.bin
+network_adapter.bin binary size 0x112660 bytes. Smallest app partition is 0x180000 bytes. 0x6d9a0 bytes (29%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/bootloader/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/bootloader/bootloader.bin
+Bootloader binary size 0x5ec0 bytes. 0x2140 bytes (26%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32c6 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 4MB --flash_freq 80m 0x0 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x10000 build/network_adapter.bin
+or from the "/Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build" directory
+ python -m esptool --chip esp32c6 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"
+[17/24] Performing install step for 'connectivity_esp_hosted'
+[18/24] Completed 'connectivity_esp_hosted'
+[19/24] Copying slave c6 firmware to storage staging and generating MD5 checksums
+[20/24] cd /Users/zyki/Work/firmware/build/flash_storage && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/fatfs/wl_fatfsgen.py /Users/zyki/Work/firmware/build/storage_staging --long_name_support --partition_size 0xbb0000 --output_file /Users/zyki/Work/firmware/build/storage.bin --sector_size 4096
+[21/24] Generating esp-idf/esp_system/ld/sections.ld
+info: INFO: Symbol SPIRAM_TRY_ALLOCATE_WIFI_LWIP defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/zyki/Work/firmware/components/esp_psram/Kconfig:7
+    /Users/zyki/esp/v5.5/esp-idf/components/esp_psram/Kconfig.spiram.common:100
+[22/24] Linking CXX executable badgevms.elf
+[23/24] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32p4 image...
+Merged 3 ELF sections
+Successfully created esp32p4 image.
+Generated /Users/zyki/Work/firmware/build/badgevms.bin
+[24/24] cd /Users/zyki/Work/firmware/build/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/zyki/Work/firmware/build/partition_table/partition-table.bin /Users/zyki/Work/firmware/build/badgevms.bin
+badgevms.bin binary size 0x186510 bytes. Smallest app partition is 0x200000 bytes. 0x79af0 bytes (24%) free.

@@ -1,0 +1,10 @@
+{
+    "unique_identifier": "doomgeneric",
+    "name": "doomgeneric",
+    "author": "Team:Badge",
+    "version": "1",
+    "interpreter": "",
+    "metadata_file": "",
+    "binary_path": "doomgeneric.elf",
+    "source": 1
+}

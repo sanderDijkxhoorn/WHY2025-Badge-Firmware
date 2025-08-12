@@ -1,0 +1,13 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 /Users/zyki/Work/firmware
+info: INFO: Symbol SPIRAM_TRY_ALLOCATE_WIFI_LWIP defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/zyki/esp/v5.5/esp-idf/components/esp_psram/Kconfig.spiram.common:100
+    /Users/zyki/Work/firmware/components/esp_psram/Kconfig:7
+CMake Deprecation Warning at managed_components/espressif__esp-serial-flasher/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+

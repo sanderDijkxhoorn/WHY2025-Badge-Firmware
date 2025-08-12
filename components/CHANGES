@@ -1,0 +1,55 @@
+# Changes made to forked components
+
+* esp_lcd_st7703 (https://github.com/espressif/esp-iot-solution/tree/master/components/display/lcd/esp_lcd_st7703)
+  - Change display size to 720 x 720
+    - Matching the WHY2025 panel
+
+* elf_loader (https://github.com/espressif/esp-iot-solution/tree/master/components/elf_loader)
+  - Use BadgeVMS memory management instead of esp-idf
+  - Use BadgeVMS generated symbol list instead of hardcoded symbol list
+
+* freertos (From esp-idf v5.5)
+  - Add trace hooks for traceTASK_SWITCHED_IN and traceTASK_SWITCHED_OUT
+    - BadgeVMS uses these tracepoints to swap in and out the MMU mappings for each task
+
+* esp_driver_ppa (From esp-idf v5.5)
+  - Make ppa dma2d callback IRAM safe
+
+* esp_lcd (From esp-idf v5.5)
+  - Use BadgeVMS framebuffer allocator instead of heap_caps_*
+
+* esp_psram (From esp-idf v5.5)
+  - Disable default MMU mapping
+    - BadgeVMS manages all PSRam MMU mappings
+  - esp_psram_check_ptr_addr only checks for vaddr range, not actual mapping
+  - Allow SPIRAM_TRY_ALLOCATE_WIFI_LWIP even when not integrated into malloc
+
+* esp_hw_support (From esp-idf v5.5)
+  - Add an option to slightly increase PSRAM voltage
+
+* esp_tca8418
+  - Force version 1.2 of espressif:i2c_bus
+
+* hal (From esp-idf v5.5)
+  - Put all cache operations in IRAM
+
+* why_stdio (From picolibc)
+  - Rename stdio functions with a why_ prefix
+    - BadgeVMS uses these functions to allow user programs to access resources
+  - Use BadgeVMS malloc/free
+  - Use BadgeVMS open/read/write/lseek
+
+* esptool_py (From esp-idf v5.5)
+  - Comment out the code in CMakeLists.txt that flashes the main project binary
+    onto the "default boot partition", i.e. factory. This prevented us from
+    flashing an small factory app that only does OTA.
+
+* spi_flash (From esp-idf v5.5)
+  - No changes.
+  - Needed here because it implicitly depends on esptool_py Kconfig.
+
+* esp_http_client (From esp-idf v5.5)
+  - use why_io_port to switch all allocations to task context
+
+* esp-tls (From esp-idf v5.5)
+  - use why_io_port to switch all allocations to task context

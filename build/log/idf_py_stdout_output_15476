@@ -1,0 +1,128 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/zyki/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/zyki/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32p4
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/esp_wifi_remote": "0.14.4" -> "0.14.5"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 8 dependencies:
+NOTICE: [1/8] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/8] espressif/eppp_link (1.0.0)
+NOTICE: [3/8] espressif/esp-serial-flasher (1.9.0)
+NOTICE: [4/8] espressif/esp_hosted (2.0.17)
+NOTICE: [5/8] espressif/esp_serial_slave_link (1.1.0~1)
+NOTICE: [6/8] espressif/esp_wifi_remote (0.14.4)
+NOTICE: [7/8] espressif/i2c_bus (1.2.0)
+NOTICE: [8/8] idf (5.5.0)
+NOTICE: Skipping optional dependency: espressif/usb_host_cdc_acm
+-- Project sdkconfig file /Users/zyki/Work/firmware/sdkconfig
+Loading defaults file /Users/zyki/Work/firmware/sdkconfig.defaults...
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/riscv/ld/rom.api.ld
+-- USING O3
+-- App "badgevms" version: 8
+-- Adding linker script /Users/zyki/Work/firmware/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/zyki/Work/firmware/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.api.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.rvfp.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.wdt.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.systimer.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.version.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.libc.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/esp_rom/esp32p4/ld/esp32p4.rom.newlib.ld
+-- Adding linker script /Users/zyki/esp/v5.5/esp-idf/components/soc/esp32p4/ld/esp32p4.peripherals.ld
+-- I2C_BUS: 1.2.0
+-- BMI270: 1.1.0
+-- ELF_LOADER: 1.0.0
+-- ESP_LCD_ST7703: 1.0.3
+-- Using Hosted Wi-Fi
+-- Component idf::espressif__esp_hosted will be linked with -Wl,--whole-archive
+-- Component idf::sd_card will be linked with -Wl,--whole-archive
+-- Components: app_update badgevms bmi270 bootloader bootloader_support bt cxx driver efuse elf_loader esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_http_client esp_hw_support esp_lcd esp_lcd_st7703 esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_tca8418 esp_timer esp_vfs_console esp_wifi espressif__cmake_utilities espressif__eppp_link espressif__esp-serial-flasher espressif__esp_hosted espressif__esp_serial_slave_link espressif__esp_wifi_remote espressif__i2c_bus esptool_py fatfs freertos hal heap http_parser log lwip mbedtls newlib nvs_flash partition_table pthread riscv sd_card sdmmc soc spi_flash tcp_transport vfs wear_levelling why_stdio wpa_supplicant
+-- Component paths: /Users/zyki/esp/v5.5/esp-idf/components/app_update /Users/zyki/Work/firmware/badgevms /Users/zyki/Work/firmware/components/bmi270 /Users/zyki/esp/v5.5/esp-idf/components/bootloader /Users/zyki/esp/v5.5/esp-idf/components/bootloader_support /Users/zyki/esp/v5.5/esp-idf/components/bt /Users/zyki/esp/v5.5/esp-idf/components/cxx /Users/zyki/esp/v5.5/esp-idf/components/driver /Users/zyki/esp/v5.5/esp-idf/components/efuse /Users/zyki/Work/firmware/components/elf_loader /Users/zyki/Work/firmware/components/esp-tls /Users/zyki/esp/v5.5/esp-idf/components/esp_adc /Users/zyki/esp/v5.5/esp-idf/components/esp_app_format /Users/zyki/esp/v5.5/esp-idf/components/esp_bootloader_format /Users/zyki/esp/v5.5/esp-idf/components/esp_coex /Users/zyki/esp/v5.5/esp-idf/components/esp_common /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_ana_cmpr /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_bitscrambler /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_dac /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_gpio /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_gptimer /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_i2c /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_i2s /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_ledc /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_mcpwm /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_parlio /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_pcnt /Users/zyki/Work/firmware/components/esp_driver_ppa /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_rmt /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdio /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdm /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdmmc /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_sdspi /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_spi /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_tsens /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_twai /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_uart /Users/zyki/esp/v5.5/esp-idf/components/esp_driver_usb_serial_jtag /Users/zyki/esp/v5.5/esp-idf/components/esp_eth /Users/zyki/esp/v5.5/esp-idf/components/esp_event /Users/zyki/esp/v5.5/esp-idf/components/esp_gdbstub /Users/zyki/Work/firmware/components/esp_http_client /Users/zyki/Work/firmware/components/esp_hw_support /Users/zyki/Work/firmware/components/esp_lcd /Users/zyki/Work/firmware/components/esp_lcd_st7703 /Users/zyki/esp/v5.5/esp-idf/components/esp_mm /Users/zyki/esp/v5.5/esp-idf/components/esp_netif /Users/zyki/esp/v5.5/esp-idf/components/esp_netif_stack /Users/zyki/esp/v5.5/esp-idf/components/esp_partition /Users/zyki/esp/v5.5/esp-idf/components/esp_phy /Users/zyki/esp/v5.5/esp-idf/components/esp_pm /Users/zyki/Work/firmware/components/esp_psram /Users/zyki/esp/v5.5/esp-idf/components/esp_ringbuf /Users/zyki/esp/v5.5/esp-idf/components/esp_rom /Users/zyki/esp/v5.5/esp-idf/components/esp_security /Users/zyki/esp/v5.5/esp-idf/components/esp_system /Users/zyki/Work/firmware/components/esp_tca8418 /Users/zyki/esp/v5.5/esp-idf/components/esp_timer /Users/zyki/esp/v5.5/esp-idf/components/esp_vfs_console /Users/zyki/esp/v5.5/esp-idf/components/esp_wifi /Users/zyki/Work/firmware/managed_components/espressif__cmake_utilities /Users/zyki/Work/firmware/managed_components/espressif__eppp_link /Users/zyki/Work/firmware/managed_components/espressif__esp-serial-flasher /Users/zyki/Work/firmware/managed_components/espressif__esp_hosted /Users/zyki/Work/firmware/managed_components/espressif__esp_serial_slave_link /Users/zyki/Work/firmware/managed_components/espressif__esp_wifi_remote /Users/zyki/Work/firmware/managed_components/espressif__i2c_bus /Users/zyki/esp/v5.5/esp-idf/components/esptool_py /Users/zyki/esp/v5.5/esp-idf/components/fatfs /Users/zyki/Work/firmware/components/freertos /Users/zyki/Work/firmware/components/hal /Users/zyki/esp/v5.5/esp-idf/components/heap /Users/zyki/esp/v5.5/esp-idf/components/http_parser /Users/zyki/esp/v5.5/esp-idf/components/log /Users/zyki/esp/v5.5/esp-idf/components/lwip /Users/zyki/esp/v5.5/esp-idf/components/mbedtls /Users/zyki/esp/v5.5/esp-idf/components/newlib /Users/zyki/esp/v5.5/esp-idf/components/nvs_flash /Users/zyki/esp/v5.5/esp-idf/components/partition_table /Users/zyki/esp/v5.5/esp-idf/components/pthread /Users/zyki/esp/v5.5/esp-idf/components/riscv /Users/zyki/Work/firmware/components/sd_card /Users/zyki/esp/v5.5/esp-idf/components/sdmmc /Users/zyki/esp/v5.5/esp-idf/components/soc /Users/zyki/esp/v5.5/esp-idf/components/spi_flash /Users/zyki/esp/v5.5/esp-idf/components/tcp_transport /Users/zyki/esp/v5.5/esp-idf/components/vfs /Users/zyki/esp/v5.5/esp-idf/components/wear_levelling /Users/zyki/Work/firmware/components/why_stdio /Users/zyki/esp/v5.5/esp-idf/components/wpa_supplicant
+-- Building SDK libraries with compiler: /Users/zyki/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Configuring done (5.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Users/zyki/Work/firmware/build
+[1/21] Copying libsdl3.a to SDK staging
+[2/21] cd /Users/zyki/Work/firmware/build/flash_storage && /opt/homebrew/bin/cmake -E rm -rf -- /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E make_directory /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E copy_directory /Users/zyki/Work/firmware/flash_storage/skel /Users/zyki/Work/firmware/build/storage_staging
+[3/21] cd /Users/zyki/Work/firmware/build/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/zyki/Work/firmware/build/partition_table/partition-table.bin /Users/zyki/Work/firmware/build/badgevms.bin
+badgevms.bin binary size 0x186510 bytes. Smallest app partition is 0x200000 bytes. 0x79af0 bytes (24%) free.
+[4/21] Performing build step for 'bootloader'
+[1/1] cd /Users/zyki/Work/firmware/build/bootloader/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x2000 /Users/zyki/Work/firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x55c0 bytes. 0xa40 bytes (11%) free.
+[5/21] Copying hello manifest, skel and stripped elf to storage staging
+[6/21] Copying badgevms_launcher manifest, skel and stripped elf to storage staging
+[7/21] Copying sdl_test manifest, skel and stripped elf to storage staging
+[8/21] Copying why2025_ota manifest, skel and stripped elf to storage staging
+[9/21] Copying wifi_setup manifest, skel and stripped elf to storage staging
+[10/21] No install step for 'bootloader'
+[11/21] Copying why2025_namebadge manifest, skel and stripped elf to storage staging
+[12/21] Copying why2025_sponsors manifest, skel and stripped elf to storage staging
+[13/21] Completed 'bootloader'
+[14/21] Building app ELF: wifi_setup_gui
+[15/21] Copying wifi_setup_gui manifest, skel and stripped elf to storage staging
+FAILED: [code=1] sdk_apps/CMakeFiles/storage_staging_add_app_wifi_setup_gui storage_staging/BADGEVMS/APPS/wifi_setup_gui.json storage_staging/BADGEVMS/APPS/wifi_setup_gui /Users/zyki/Work/firmware/build/sdk_apps/CMakeFiles/storage_staging_add_app_wifi_setup_gui /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui.json /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui 
+cd /Users/zyki/Work/firmware/build/sdk_apps && /opt/homebrew/bin/cmake -E rm -rf -- /Users/zyki/Work/firmware/build/storage_staging/wifi_setup_gui && /opt/homebrew/bin/cmake -E make_directory /Users/zyki/Work/firmware/build/storage_staging && /opt/homebrew/bin/cmake -E copy /Users/zyki/Work/firmware/sdk_apps/wifi_setup_gui/manifest.json /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui.json && /opt/homebrew/bin/cmake -E copy_directory /Users/zyki/Work/firmware/sdk_apps/wifi_setup_gui/storage_skel /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui && /opt/homebrew/bin/cmake -E copy /Users/zyki/Work/firmware/build/app_elfs/wifi_setup_gui.elf /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui/wifi_setup_gui.elf && /Users/zyki/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-strip /Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui/wifi_setup_gui.elf
+Error copying directory from "/Users/zyki/Work/firmware/sdk_apps/wifi_setup_gui/storage_skel" to "/Users/zyki/Work/firmware/build/storage_staging/BADGEVMS/APPS/wifi_setup_gui".
+[16/21] Performing build step for 'connectivity_esp_hosted'
+Executing action: all (aliases: build)
+Running ninja in directory /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build
+Executing "ninja all"...
+[1/4] cd /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/partition_table/partition-table.bin /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/network_adapter.bin
+network_adapter.bin binary size 0x112660 bytes. Smallest app partition is 0x180000 bytes. 0x6d9a0 bytes (29%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] cd /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/bootloader/esp-idf/esptool_py && /Users/zyki/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/zyki/esp/v5.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build/bootloader/bootloader.bin
+Bootloader binary size 0x5ec0 bytes. 0x2140 bytes (26%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32c6 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 4MB --flash_freq 80m 0x0 build/bootloader/bootloader.bin 0x8000 build/partition_table/partition-table.bin 0xd000 build/ota_data_initial.bin 0x10000 build/network_adapter.bin
+or from the "/Users/zyki/Work/firmware/connectivity_esp_hosted/slave/build" directory
+ python -m esptool --chip esp32c6 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"
+ninja: build stopped: subcommand failed.
